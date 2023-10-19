@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Restoranulio | The Customer's Choice</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="logo nav__logo" src="img/Logo.png" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Make a Booking</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1 class="header__h1">
+          Where every
+          <span class="highlight"> Bite</span> <br />
+          Tells a <span class="highlight"> Delicious</span> story
+        </h1>
+        <h4>Experience Culinary Excellence.</h4>
+        <img class="header__img" src="img/Header-img.jpg" />
+        <img class="header__logo" src="img/Logo.png" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Menu</h2>
+        <h3 class="section__header">Everything you need in a menu</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide"><img src="img/food2.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/food1.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/food3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/food4.jpg" alt="Photo 4" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">About Us</h2>
+        <h3 class="section__header">
+          Crafting Culinary Delights with a Touch of Tradition
+        </h3>
+      </div>
+
+      <div class="about">
+        <div class="about__tab-container">
+          <button
+            class="btn about__tab about__tab--1 about__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Tradition
+          </button>
+          <button class="btn about__tab about__tab--2" data-tab="2">
+            <span>02</span>Dedication
+          </button>
+          <button class="btn about__tab about__tab--3" data-tab="3">
+            <span>03</span>Quality
+          </button>
+        </div>
+        <div class="about__content about__content--1 about__content--active">
+          <div class="about__icon about__icon--1_container">
+            <ion-icon name="happy-outline" class="about__icon--1"></ion-icon>
+          </div>
+          <h5 class="about__header">
+            Rooted in Heritage, Nourished by Tradition.
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="about__content about__content--2">
+          <div class="about__icon about__icon--2_container">
+            <ion-icon name="heart-outline" class="about__icon--2"></ion-icon>
+          </div>
+          <h5 class="about__header">
+            Where Culinary History Meets Modern Excellence.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="about__content about__content--3">
+          <div class="about__icon about__icon--3_container">
+            <ion-icon
+              name="checkmark-outline"
+              class="about__icon--3"
+            ></ion-icon>
+          </div>
+          <h5 class="about__header">
+            Elevating Every Dish with Uncompromising Quality.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer section">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+
+      <img src="img/Logo.png" class="footer__logo" />
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Make a booking <br />
+        in just <span class="highlight">2 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
